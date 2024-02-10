@@ -1,0 +1,25 @@
+{
+  "name": "snp500",
+  "version": "1.0.0",
+  "description": "full stack web application for creating economic models based on data on stocks listed on the snp500",
+  "main": "snp500.py",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Axtomaton/SNP500.git"
+  },
+  "keywords": [
+    "sp500"
+  ],
+  "author": "Ivan Lin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Axtomaton/SNP500/issues"
+  },
+  "homepage": "https://github.com/Axtomaton/SNP500#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

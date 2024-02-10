@@ -7,8 +7,14 @@ from selenium.webdriver.chrome.options import Options
 
 import pandas as pd
 
+"""
+@Brief: This script is used to scrape the S&P 500 stock symbols from the stockanalysis.com website.
+@purpose: Get the ticker symbols of the current companies listed in the snp500. 
+@Output: CSV file with the ticker symbols, used in tangent with the sp500.py script to get the stock data.
+"""
+
 if __name__ == "__main__":
-    URL = "https://stockanalysis.com/list/sp-500-stocks/"
+    URL = "https://stockanalysis.com/list/sp-500-stocks/" ##URL to scrape
 
     response = requests.get(URL)
     chrome_options = Options()
@@ -21,6 +27,6 @@ if __name__ == "__main__":
     df = pd.DataFrame(data, columns=["Ticker Symbol"])
 
     print (df)
-    df.to_csv('sp500_stocks.csv', index=False)
+    df.to_csv('sp500_stocks.csv', index=False, headers=False)
     driver.quit()
 
